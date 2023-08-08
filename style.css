@@ -1,4 +1,3 @@
-
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@100;200;400;700&display=swap');
   
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Lobster&family=Poppins:wght@100;200;400;700&display=swap');
@@ -10,7 +9,7 @@
   font-family: lato,sans-serif;
 }
  .pagename{
-    font-size:4vh ;
+    font-size:3.5vw;
   }
 .navbar {
     background-color:white;
@@ -23,41 +22,72 @@
   .navbar a {
     color:black;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 0.5vw;
     font-family: lato,sans-serif;
     font-weight:400;
-    font-size:1.1vw ;
+    font-size:1.4vw ;
+    padding: 1vw;
 }
   .navbar .login-button {
     background-color:black;
     color:white;
-    padding: 8px 16px;
+    padding: 0.5vw 1vw;
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 1vw;
-}
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 1vw;
-  
-}
-.grid-item {
-    text-align: center;
-    padding-top: 1vw;
-    padding-bottom:1vw;
-    letter-spacing:0.1vw;
-    color:#323232;
-    font-size:1vw;
+    font-size: 1.3vw;
     font-weight: 500;
 }
+@media (max-width: 400px)  {
+  .pagename{
+    font-weight: 700;
+     font-size: 4vw;
+  }
+  .navbar a{
+    font-size: 3vw;
+  }
+  .navbar .login-button{
+    font-size: 3vw;
+  }
+  .grid-container .grid-item{
+   font-size: 2.2vw;
+   padding: 2vw;
+   font-weight: 900;
+  }
+}
+
+
+
+
+
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 1vw;
+
+}
+.grid-item {
+  text-align: center;
+  padding-top: 0.5vw;
+  padding-bottom:0.5vw;
+  letter-spacing:0.1vw;
+  color:#323232;
+  font-size:1.2vw;
+  font-weight: 500;
+}
+.grid-container a{
+  text-decoration: none;
+}
 .dark-pink-bg {
-    background-color: #fddada; /* Dark Pink */
+  background-color: #fddada; /* Dark Pink */
 }
 
 .light-pink-bg {
-    background-color:#fcc0c0; /* Light Pink */
+  background-color:#fcc0c0; /* Light Pink */
 }
 .grid-container-2{
   display: grid;
@@ -68,59 +98,62 @@
 }
 .image-container{
     width: 100%;
-    max-height: 40vw; /* Adjust the height of the image container as needed */
-    overflow: hidden;
+    max-height: 34vw; /* Adjust the height of the image container as needed */
+   
 }
 .image-container img{
   width: 100%;
-  height:100%
+  height:34vw;
+  object-fit: cover;
  }
 /* Add any styling you want for the text container */
  .text-container {
   
   text-align: center;
   position: absolute;
-  top:13%;
-  left: 5%;
+  top:14%;
+  left: 18%;
   padding-left: 2vw;
   }
   .text-line{
-    color:#323232;
+    color:white;
+    text-shadow:.1vw .1vw #de2085;
     font-weight: 900;
     font-size: 5.5vw;
+    line-height: 4.5vw;
   }
  .of{
   font-size:5vw; ;
   color: rgb(206, 10, 115);
-  padding-left: 10px;
+  padding-left:0.5vw;
 }
 .upto{
   writing-mode:vertical-lr;
   transform: rotate(180deg);
   font-size: 1vw;
- 
   font-family: lato,sans-serif;
   font-weight: 600;
-  color: white;
+  color:white;
+  
  
 }
 /* style for 60%off */
 .upto-60{
-  
   font-weight: 900;
   font-size:3vw;
   text-align: center;
   color:white ;
-  line-height: 10px;
-  
-}
+  line-height:1vw;
+ }
 .upto-1{
   writing-mode:vertical-lr;
   transform: rotate(180deg);
   font-size: 1.4vw;
   font-family: lato,sans-serif;
   font-weight: 600;
-  color: white;
+  color:white;
+  padding: 0;
+  text-shadow: 0.1vw 0.1vw black;
  
 }
 .upto-2{
@@ -142,17 +175,29 @@
   color:#323232 ;
   line-height: 10px;
   margin:1.5vw  0;
+  text-shadow: 0.1vw 0.1vw white;
 }
+
 /*------------  */
 
 .shop-now-button-1{
   font-weight: 900;
   background-color: white;
   color:#323232;
-  border: 2px solid black;
+  border: 0.2vw solid black;
   padding: 2% 6%;
   cursor: pointer;
   font-size:1.3vw;
+  text-transform: uppercase;
+ }
+ .shop-now-button-2{
+  font-weight: 900;
+  background-color: white;
+  color:#323232;
+  border: 0.2vw solid black;
+  padding: 2% 4%;
+  cursor: pointer;
+  font-size:1vw;
   text-transform: uppercase;
  }
 /* style-for all subtiltle */
@@ -171,15 +216,15 @@
 .grid-container-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap:1.8vw;
+  gap:3vw;
   padding:0 1vw;
-  height: 40vw;
+  height: 35vw;
   overflow: hidden;
 }
 
 .grid-container-3 img {
  width: 100%;
- height:40vw;
+ height:35vw;
  object-fit:cover;
 }
 .image-1{
@@ -209,7 +254,7 @@
   color: white;
   font-weight: 900;
   position:absolute;
-  left:20%;
+  left:30%;
   top:80%;
   line-height: 2.6vw;
   text-transform:uppercase;
@@ -222,12 +267,12 @@
 .summer{
   display: grid;
   grid-template-columns: 1fr;
-  height: 40vw;
+  height: 30vw;
   position: relative;
 
 }
 .summer-image{
-   height:40vW;
+   height:30vW;
    overflow: hidden;
 }
 
@@ -289,9 +334,15 @@
 
   
  }
+
+ .categories-item-text{
+  font-size: 1vw;
+  font-weight: 500;
+ }
 .categories-container-image img{
   width:100%;
   height:30vw;
+ 
   object-fit: cover;
 }
 .price{
@@ -300,6 +351,19 @@
   font-weight: 600;
 
 }
+
+  @media (max-width: 768px) {
+    .categories-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    /* Hide the last image */
+    .categories-container-image:last-child {
+      display: none;
+    }
+   
+  }
+
 .insta-container{
   background-color:#fafcfd; 
   height: 40vw;
@@ -314,10 +378,11 @@
 .insta-container-grid{
   display: grid;
   grid-template-columns: repeat(6,1fr);
-  grid-template-rows: repeat(2,80%);
+  grid-template-rows: repeat(2,14vw);
   gap: 2vw;
   padding:1vw ;
   background-color: aliceblue;
+  height: 20vw;
 }
 .insta-container-grid  img{
   width: 100%;
@@ -328,14 +393,65 @@
   grid-column: span 2;
   grid-row: span 2;
 }
+.insta-container-grid-item-2{
+  position: relative;
+  display: inline-block;
+ }
+ .insta-image-text{
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+   top:50%;
+  left: 50%;
+  width: 14.2vw;
+  height: 14.2vw;
+ 
+  background-color: #5e5a5a93;
+  color: white;
+ 
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+ }
+ 
+
+.insta-container-grid-item-2:hover img {
+  opacity: 0.9; /* Adjust the opacity level as needed */
+}
+
+.insta-container-grid-item-2:hover .insta-image-text {
+  opacity: 1;
+}
+
+.linkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fde3dd;
+  width:1fr;
+  height:14vw;
+  font-size:1.4vw ;
+ font-weight: 700;
+ 
+}
+.linkbox a{
+  text-decoration: none;
+  color: #323232;
+}
+
+ 
+
 .worthbuying-container{ 
   display:grid;
   grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(1,30vw);
+  grid-template-rows: repeat(1,25vw);
   gap:1.5vw;
   padding-left: 1vw;
-  margin-bottom: 2vw;
+ 
+  
 }
+
 .worthbuying-container img{
   width:100%;
   height:100%;
@@ -364,16 +480,20 @@
 .worthbuying-container-text{
   position: absolute;
   top:80%;
-  left:30%;
-  color: #de2085;
+  left:20%;
+  color:white;
   font-weight: 900;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
+  text-align: center;
+  text-transform: uppercase;
 }
 .mrp
 {
   font-weight: 900;
-  font-size: 2vw;
-  color: white;
+  font-size: 1.6vw;
+  color:white;
+  text-shadow: 0.1vw 0.1vw rgb(114, 220, 234);
+  text-align: center;
 }
 .siddartha-fab-container{
   display: grid;
@@ -382,6 +502,7 @@
   padding-top: 2vw;
   gap: 2vw;
   height:47vw;
+  margin: 1vw;
  
 }
 .siddartha-fab-container-item-1 img{
@@ -468,10 +589,12 @@
 }
 .rimzim-party-text-2{
   position: absolute;
-  left: 58%;
+  left: 55%;
   top:20%;
+  font-style: italic;
   color:white;
-  font-size:1.8vw;
+  font-size:3.7vw;
+  text-shadow: -0.15vw -0.15vw rgb(241, 47, 199);
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -480,6 +603,7 @@
 .inspotlight-container{
   display: grid;
   grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(1,18vw);
   gap:1vw;
   
 }
@@ -533,8 +657,8 @@
 }
 .you-got-it-text{
   position: absolute;
-  left:35%;
-  top:40%;
+  left:36%;
+  top:35%;
   color: white;
   font-size: 3vw;
   font-weight: 900;
@@ -546,7 +670,7 @@
   margin-top: 1vw;
   background-color: white;
   color:#323232;
-  border: 2px solid black;
+  border:0.2vw solid black;
   padding: 2% 6%;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -593,21 +717,25 @@
   font-weight: 900;
   text-transform: uppercase;
   width: 60%;
-  text-align: left;
+  text-align:center;
 }
 
 footer {
-  background-color: lightgrey;
+  background-color:#fffdfd;
   padding: 10px 0;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  grid-template-columns: 1fr 2fr 2fr;
+  border-top: 0.1vw solid #d4cdcd;
+  border-bottom:0.1vw solid #d4cdcd;
   margin: 2vw 2vw;
   justify-content: center;
+}
+.column:not(:last-child) {
+  border-right:0.1vw solid #d4cdcd;
+  margin: 2vw 0;
 }
 
 
@@ -617,6 +745,7 @@ footer {
   padding-left: 2vw;
 }
 
+
 .service{
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -624,27 +753,27 @@ footer {
  padding-left: 10%;
  
 }
+.column-3{
+  text-align: center;
+}
 .column-item-1{
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   font-weight: 900;
-  margin:2vw 0 ;
+  margin:1.5vw 0 ;
 }
 .column-item-2{
   padding-left: 35%;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   font-weight: 900;
-  margin:2vw 0 ;
+  margin:1.5vw 0 ;
 }
 .column-item-3{
-  padding-left: 30%;
-  font-size: 1.2vw;
+  
+  font-size: 1.3vw;
   font-weight: 900;
-  margin:2vw 0 ;
+  margin:1.5vw 0 ;
 }
-.column:not(:last-child) {
-  border-right: 2px solid black;
-  margin: 2vw 0;
-}
+
 .column ul {
   list-style-type: none;
   padding: 0;
@@ -658,4 +787,55 @@ footer {
   text-decoration: none;
   color: black;
 }
+.column-item-sub{
+  font-size: 1.2vw;
+  font-weight: 400;
+}
 
+.connect-us{
+  text-transform: uppercase;
+  font-size: 1.3vw;
+  font-weight: 700;
+  padding-bottom:1vw;
+  padding-left: 2.7vw;
+
+}
+.icons img{
+   width:3vw;
+  height: 3vw;
+  margin: 0.2vw;
+}
+#subscribe{
+  display: inline-block;
+  text-transform: uppercase;
+  background-color:black;
+  color:white;
+  font-size: 1vw;
+  font-weight: 800;
+  padding: 0.7vw;
+  border-style: none;
+ }
+#emailinput{
+  display: inline-block;
+  width:20vw;
+ height: 2.7vw;
+
+ }
+  .email-flex{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    gap:1vw;
+    margin-bottom: 2vw;
+  }
+
+#emailinput::placeholder{
+  font-size: 1.2vw;
+  font-weight: 700;
+  text-align:left;
+  padding-left: 0.4vw;
+ 
+ 
+
+ 
+}
