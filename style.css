@@ -8,6 +8,10 @@
   box-sizing: border-box;
   font-family: lato,sans-serif;
 }
+.parent-container{
+  max-width:1800px;
+  margin: auto;
+}
  .pagename{
     font-size:3.5vw;
   }
@@ -967,11 +971,12 @@ footer {
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 1.5fr;
   border-top: 0.1vw solid #d4cdcd;
   border-bottom:0.1vw solid #d4cdcd;
-  margin: 2vw 2vw;
+  margin: 5vw 2vw;
   justify-content: center;
+  
 }
 .column:not(:last-child) {
   border-right:0.1vw solid #d4cdcd;
@@ -986,7 +991,9 @@ footer {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   margin-top: 0;
-  padding-left: 10%;
+  justify-content: left;
+  gap:5vw;
+  padding-left: 2vw;
 
  
 }
@@ -996,20 +1003,23 @@ footer {
 .column-item-1{
   font-size: 1.3vw;
   font-weight: 900;
-  margin:2vw 0 ;
+  margin-bottom: 2vw;
 }
 .column-item-2{
-  padding-left: 35%;
+ padding-left: 35%; 
   font-size: 1.3vw;
   font-weight: 900;
-  margin:2vw 0 ;
+  margin-bottom: 2vw;
 }
+
 .column-item-3{
-  
   font-size: 1.3vw;
   font-weight: 900;
-  margin:2vw 0 ;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  text-align: center;
 }
+
 
 .column ul {
   list-style-type: none;
@@ -1029,19 +1039,21 @@ footer {
   line-height: 1vw;
   font-weight: 400;
 }
-
 .connect-us{
-  text-transform: uppercase;
-  font-size: 1.3vw;
-  font-weight: 700;
-  padding-bottom:1vw;
-  padding-left: 2.7vw;
-
-}
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    font-weight: 700;
+    padding-bottom:1vw;
+    text-align: center;
+ }
 .icons img{
    width:3vw;
-  height: 3vw;
-  margin: 0.2vw;
+   height: 3vw;
+   margin-left:0.5vw ;
+  }
+.icons{
+  display:flex;
+  justify-content: center;
 }
 #subscribe{
   display: block;
@@ -1089,11 +1101,10 @@ footer {
  }
  .service{
    padding-left: 0;
-  }
+}
   .icons img{
-  width:4vw;
- height:4vw;
- 
+   width:4vw;
+   height:4vw;
 }
 .column-item-1{
   font-size: 2.5vw;
@@ -1107,7 +1118,6 @@ footer {
   margin:2vw 0 ;
 }
 .column-item-3{
-  
   font-size: 2.5vw;
   font-weight: 900;
   margin:2vw 0 ;
@@ -1116,10 +1126,25 @@ footer {
   align-items: center;
 }
 .connect-us{
- 
   font-size: 2vw;
- 
-
 }
+
+
+.column:nth-child(2) {
+  border-right: none;
+}
+.column-item-3{
+  display: grid;
+  align-items: center;
+}
+.footer-grid > :nth-child(3) {
+  grid-column: span 2; /* Span both columns */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.1vw solid #d4cdcd;
+}
+
 
  }
